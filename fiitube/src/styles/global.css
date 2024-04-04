@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-purple: #241F2D;
+  --color-light-purple: #322B3E;
+  --color-gray: #564D67;
+  --color-white: #E4DFED;
+}
+
+body {
+  @apply bg-[#241F2D] text-slate-100;
+}
