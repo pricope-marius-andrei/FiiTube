@@ -3,6 +3,7 @@ import { AiFillHome } from "react-icons/ai";
 import { FaFire } from "react-icons/fa";
 import { FaFolderOpen } from "react-icons/fa6";
 import { FiAlignJustify } from "react-icons/fi";
+import { FaPersonSkating } from "react-icons/fa6";
 import { motion } from "framer-motion"
 import Logo from "../common/logo";
 
@@ -27,13 +28,13 @@ export default function Navbar(props) {
             <section className="flex flex-col w-full h-fit justify-center">
                 <h1 className="text-center font-semibold text-2xl">Abonamente</h1>
                 <section className="flex flex-col w-full my-5">
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaFolderOpen size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaFolderOpen size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaFolderOpen size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaFolderOpen size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaFolderOpen size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaFolderOpen size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaFolderOpen size={30}/>} /> 
+                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
+                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
+                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
+                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
+                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
+                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
+                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
 
                 </section>
             </section>

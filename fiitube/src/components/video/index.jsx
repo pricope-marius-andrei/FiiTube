@@ -1,11 +1,19 @@
 import { MdReport } from "react-icons/md";
 import { FiMaximize2 } from "react-icons/fi";
 import { FaWindowMinimize } from "react-icons/fa6";
-import { useState } from "react";
+import { forwardRef, useState } from "react";
 
-export default function Video() {
-
+const Video = forwardRef((props, ref) => {
     const [maximaizeVideo, setMaximaizeVideo] = useState(false);
+
+    
+
+    const scrollBottom = e => {
+        console.log("Ceva");
+        window.scrollTo({ top: e.current.offsetTop, behavior: 'smooth' });
+    };
+
+    
 
     return (
         <>
@@ -21,7 +29,7 @@ export default function Video() {
                     
                     <button 
                         className="flex w-5 h-5 bg-light-gray hover:bg-green-500 cursor-pointer rounded-full justify-center items-center mx-1"
-                        onClick={() => {setMaximaizeVideo(!maximaizeVideo)}}    
+                        onClick={() => {setMaximaizeVideo(!maximaizeVideo); ()=> {window.scrollTo(0, 0)}}}    
                     >
                             <FiMaximize2 opacity="40%" alignmentBaseline="center" size={14} color="black"/>
                     </button>
@@ -37,4 +45,7 @@ export default function Video() {
             </div>
         </>
     )
-}
+}) 
+
+export default Video
+  
