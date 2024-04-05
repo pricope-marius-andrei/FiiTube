@@ -1,14 +1,16 @@
-import Button from "../common/button"
-import { IoIosNotificationsOutline } from "react-icons/io";
-import { FiUpload } from "react-icons/fi";
+import Button from "../common/button";
 import SearchBar from "../common/searchbar";
+import { FiAlignJustify } from "react-icons/fi";
+import Logo from "../common/logo";
 
-export default function Header() {
+export default function Header(props) {
     return (
-        <div className="flex p-2 bg-purple w-full h-fit font-semibold shadow-xl">
-            {/* <Button icon={<IoIosNotificationsOutline size={30}/>}></Button>
-            <Button icon={<FiUpload size={30}/>}></Button> */}
+        <header className="flex z-10 px-4 py-2 bg-blue w-full h-fit justify-between font-semibold shadow-xl sticky top-0">
+            <div className="flex w-fit items-center justify-center p-2">
+                <Button onClick={props.hamburgerBehaviour} icon={<FiAlignJustify size={30}/>} rounded={true} inline={false}/>
+                <Logo/>
+            </div>
             <SearchBar/>
-        </div>
+        </header>
     )
 }

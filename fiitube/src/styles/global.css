@@ -1,12 +1,17 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-purple: #241F2D;
-  --color-light-purple: #322B3E;
-  --color-gray: #564D67;
+  --color-blue: #212130;
+  --color-light-blue: #2C2C4B;
+  --color-gray: #2B2B3E;
+  --color-light-gray: #62627C;
   --color-white: #E4DFED;
 }
 
 body {
-  @apply bg-[#241F2D] text-slate-100;
+  @apply bg-blue text-slate-100;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
