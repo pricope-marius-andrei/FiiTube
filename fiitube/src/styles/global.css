@@ -15,3 +15,12 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: 0;
+}
