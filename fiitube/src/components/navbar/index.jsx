@@ -21,7 +21,7 @@ export default function Navbar(props) {
                     </div>
                     <Logo/>
                 </div>
-                <Button text="Acasa" rounded={false} inline={true} icon={<AiFillHome size={30}/>}/> 
+                <Button navLink={"/"} text="Acasa" rounded={false} inline={true} icon={<AiFillHome size={30}/>}/> 
                 <Button text="Trending" rounded={false} inline={true} icon={<FaFire size={30}/>}/> 
                 <Button text="Tu" rounded={false}  inline={true} icon={<FaFolderOpen size={30}/>}/> 
             </section>

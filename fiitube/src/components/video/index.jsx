@@ -19,18 +19,18 @@ const Video = forwardRef((props, ref) => {
     
     return (
         <>
-            <div ref={videoRef} className={`flex flex-col h-fit bg-blue hover:bg-gray rounded-2xl shadow-lg ` + (maximaizeVideo ? ` col-span-3 row-span-2 h-screen order-first transition-all` : ` h-96 transition-all`)}>
+            <div ref={videoRef} className={`flex flex-col h-fit bg-blue ` + (props.hamburgerStatus == false && `hover:bg-gray `) + `rounded-2xl shadow-lg ` + (maximaizeVideo ? ` col-span-3 row-span-2 h-screen order-first transition-all` : ` h-96 transition-all`)}>
                 <div className="flex flex-row-reverse z-0 w-full justify-start p-2">
-                    <button className="flex w-5 h-5 bg-light-gray hover:bg-red-600 cursor-pointer rounded-full justify-center items-center mx-1"><MdReport opacity="40%" alignmentBaseline="center"  size={20} color="white"/></button>
+                    <button className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false && ` hover:bg-red-600 cursor-pointer`) + ` rounded-full justify-center items-center mx-1`}><MdReport opacity="40%" alignmentBaseline="center"  size={20} color="white"/></button>
                     <button 
-                        className="flex w-5 h-5 bg-light-gray hover:bg-yellow-500 cursor-pointer rounded-full justify-center items-center mx-1"
-                        onClick={() => {setMaximaizeVideo(false); props.setMaxVideo(null);}} 
+                        className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false &&  ` hover:bg-yellow-500 cursor-pointer`) + ` rounded-full justify-center items-center mx-1`}
+                        onClick={() => {if(props.maximaizedVideo != null && maximaizeVideo == true) {setMaximaizeVideo(false); props.setMaxVideo(null);}}} 
                     >
                         <FaWindowMinimize opacity="40%" alignmentBaseline="center"  size={12} color="black"/>
                     </button>
                     
                     <button 
-                        className="flex w-5 h-5 bg-light-gray hover:bg-green-500 cursor-pointer rounded-full justify-center items-center mx-1"
+                        className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false && ` hover:bg-green-500 cursor-pointer`) +  `  rounded-full justify-center items-center mx-1`}
                         onClick={() => {
                             if(maximaizeVideo == true)
                             {
@@ -38,7 +38,6 @@ const Video = forwardRef((props, ref) => {
                             }
                             else 
                             {
-                                // console.log(ref[1]);
                                 if(ref[1] != null) {
                                     ref[1].current.setMaximaizeVideo(false);
                                 }
@@ -60,9 +59,10 @@ const Video = forwardRef((props, ref) => {
                     {
                         !maximaizeVideo &&
                         <AdvancedImage
-                        className="flex justify-center items-center z-10 group-hover:opacity-0 group-hover:cursor-pointer"
-                        width="100%"
-                        cldImg={cld.image("MyVideos/video1").setAssetType('video').format('auto:image')}
+                        className={`flex justify-center items-center z-10 ` +  (props.hamburgerStatus == false && `group-hover:opacity-0 group-hover:cursor-pointer`)}
+                        width="110%"
+                        height="100%"
+                        cldImg={cld.image(`MyVideos/${props.url}`).setAssetType('video').format('auto:image')}
                     />}
 
                     {
@@ -73,7 +73,7 @@ const Video = forwardRef((props, ref) => {
                             width="1100px"
                             color="dark-blue"
                             className="flex justify-center items-center z-0"
-                            cldVid={cld.video("MyVideos/video1")}
+                            cldVid={cld.video(`MyVideos/${props.url}`)}
                             plugins={[lazyload()]}
                             />
                         :
@@ -81,13 +81,12 @@ const Video = forwardRef((props, ref) => {
                             autoPlay
                             loop
                             muted
-                            controls
                             width="100%"
                             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"
-                            cldVid={cld.video("MyVideos/video1").effect('e_preview:duration_4')}
+                            cldVid={cld.video(`MyVideos/${props.url}`).effect('e_preview:duration_4')}
                             plugins={[lazyload()]}
                             />
-                    }
+                }
                 </div>
                 {
                     !maximaizeVideo &&

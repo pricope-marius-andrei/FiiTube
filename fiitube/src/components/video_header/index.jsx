@@ -11,7 +11,7 @@ export default function VideoHeader(props) {
             <div className="flex flex-col shadow-xl px-10">
                 <h1 className="font-bold text-2xl">Title of the video. Amazing video!!!!!</h1>
                 <div className="flex w-full justify-between items-center mb-2">
-                    <button className="flex h-full items-center w-72 justify-between cursor-pointer hover:bg-gray-600 active:animate-ping px-4 p-2 rounded-xl">
+                    <button className="flex h-full items-center w-72 justify-between cursor-pointer hover:bg-gray-600 active:animate-ping px-4 p-5 rounded-xl">
                         <img className="rounded-full w-16" src="src/assets/images/avatar.jpg"></img>
                         <h2 className="font-bold ">Name of the channel</h2>
                     </button>

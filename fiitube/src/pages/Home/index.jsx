@@ -16,7 +16,7 @@ export default function Home () {
   },[maximaizedVideo])
   
   const headerRef = useRef(null);
-  const videos = [1,2,3,4,5,6,7,8,9,10];
+  const videos = [1,2,3,5,6,7,9,10];
   return (
     <div className={enableHamburger == true ? ` h-screen overflow-hidden` : ` ` }>
       {
@@ -33,7 +33,7 @@ export default function Home () {
           
           <div className={`flex w-screen h-full justify-center items-center mx-10`}>
 
-            <div className={`w-full grid grid-cols-3 grid-rows-full gap-5 ` + (maximaizedVideo == null && ` mt-10` )} >
+            <div className={`w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-full gap-5 ` + (maximaizedVideo == null && ` mt-10` )} >
             {
               (maximaizedVideo != null) &&
                 <div className='col-span-2 row-span-12'>
@@ -49,7 +49,7 @@ export default function Home () {
                 </div>
             }
               {
-                videos.map((video) => <Video key={video} ref={[headerRef, maximaizedVideo]} maximaizedVideo={maximaizedVideo} setMaxVideo={setMaximaizedVideo}/> )
+                videos.map((video) => <Video hamburgerStatus={enableHamburger} url={`video`+video%4} key={video} ref={[headerRef, maximaizedVideo]} maximaizedVideo={maximaizedVideo} setMaxVideo={setMaximaizedVideo}/> )
               }
             </div>
           </div>

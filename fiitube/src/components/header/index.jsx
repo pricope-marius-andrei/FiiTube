@@ -22,7 +22,7 @@ const Header = forwardRef((props,ref) => {
         uploadPreset: "otxanyar",
         sources: ['local'],
         showAdvancedOptions: true,
-        getUploadPresets : ["video"],
+        getUploadPresets : ["otxanyar"],
 
         styles:{
             palette: {
