@@ -23,10 +23,10 @@ export default function Navbar(props) {
                 </div>
                 <Button navLink={"/"} text="Acasa" rounded={false} inline={true} icon={<AiFillHome size={30}/>}/> 
                 <Button text="Trending" rounded={false} inline={true} icon={<FaFire size={30}/>}/> 
-                <Button text="Tu" rounded={false}  inline={true} icon={<FaFolderOpen size={30}/>}/> 
+                <Button text="You" rounded={false}  inline={true} icon={<FaFolderOpen size={30}/>}/> 
             </section>
             <section className="flex flex-col w-full h-fit justify-center">
-                <h1 className="text-center font-semibold text-2xl">Abonamente</h1>
+                <h1 className="text-center font-semibold text-2xl">Substriptions</h1>
                 <section className="flex flex-col w-full my-5">
                     <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
                     <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 

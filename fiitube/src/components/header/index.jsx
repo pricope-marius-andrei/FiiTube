@@ -5,14 +5,15 @@ import { TfiUpload } from "react-icons/tfi";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { BsPersonCircle } from "react-icons/bs";
 import Logo from "../common/logo";
-import { NavLink } from 'react-router-dom';
+import Notifications from "../common/notifications"
+import { forwardRef, useState, useRef, useEffect } from "react";
 
-import { forwardRef, useRef, useEffect } from "react";
-import Profile from "../../pages/Profile";
 
 
 const Header = forwardRef((props,ref) => {
 
+  
+    const [notificationStatus, setNotificationStatus] = useState(false);
     const widgetRef = useRef();
     const cloudinaryRef = useRef();
     useEffect(() => {
@@ -59,11 +60,15 @@ const Header = forwardRef((props,ref) => {
                 <Logo/>
             </div>
             <SearchBar/>
-            <div className="flex items-center justify-between w-60">
+            <div className="flex items-center justify-between w-80">
                 <Button onClick={() => {widgetRef.current.open()}} icon={<TfiUpload size={20}/>} rounded={true} inline={false}/>
-                <Button onClick="#" icon={<IoIosNotificationsOutline size={30}/>} rounded={true} inline={false}/>
+                <Button onClick={() => setNotificationStatus((status) => !status)} icon={<IoIosNotificationsOutline size={30}/>} rounded={true} inline={false}/>
                 <Button navLink="/profile" icon={<BsPersonCircle size={35}/>} rounded={true} inline={false}/>
             </div>
+            {
+              notificationStatus &&
+              <Notifications/>
+            }
         </header>
     )
 })
