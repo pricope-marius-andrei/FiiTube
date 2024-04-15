@@ -13,10 +13,10 @@ export default function Navbar(props) {
             initial={{ x: 'var(--spacing-8)'}}
             animate={{ x: 0}}
             exit={{ x : 'var(--spacing-8)' }}
-            className="fixed z-20 top-0 flex flex-col bg-blue shadow-2xl w-72 h-screen no-scrollbar overflow-y-scroll overflow-x-hidden px-4">
+            className={props.block ? `block` : `fixed` +  ` z-20 top-0 flex flex-col bg-blue shadow-2xl w-72 h-screen no-scrollbar overflow-y-scroll overflow-x-hidden px-4`}>
             <section className="flex flex-col w-full h-fit my-2 mx-2">
                 <div className="flex">
-                    <div className="py-2">
+                    <div className={`py-2 ` + (props.block && `hidden`)}>
                         <Button onClick={props.hamburgerBehaviour} icon={<FiAlignJustify size={30}/>} rounded={true} inline={false}/>
                     </div>
                     <Logo/>

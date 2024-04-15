@@ -19,18 +19,18 @@ const Video = forwardRef((props, ref) => {
     
     return (
         <>
-            <div ref={videoRef} className={`flex flex-col h-fit bg-blue ` + (props.hamburgerStatus == false && `hover:bg-gray `) + `rounded-2xl shadow-lg ` + (maximaizeVideo ? ` col-span-3 row-span-2 h-screen order-first transition-all` : ` h-96 transition-all`)}>
+            <div ref={videoRef} className={`flex flex-col h-fit bg-blue ` + (props.hamburgerStatus == false && props.notificationStatus == false && `hover:bg-gray `) + `rounded-2xl shadow-lg ` + (maximaizeVideo ? ` col-span-3 row-span-2 h-screen order-first transition-all` : ` h-96 transition-all`)}>
                 <div className="flex flex-row-reverse z-0 w-full justify-start p-2">
-                    <button className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false && ` hover:bg-red-600 cursor-pointer`) + ` rounded-full justify-center items-center mx-1`}><MdReport opacity="40%" alignmentBaseline="center"  size={20} color="white"/></button>
+                    <button className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false && props.notificationStatus == false &&  ` hover:bg-red-600 cursor-pointer`) + ` rounded-full justify-center items-center mx-1`}><MdReport opacity="40%" alignmentBaseline="center"  size={20} color="white"/></button>
                     <button 
-                        className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false &&  ` hover:bg-yellow-500 cursor-pointer`) + ` rounded-full justify-center items-center mx-1`}
+                        className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false && props.notificationStatus == false &&  ` hover:bg-yellow-500 cursor-pointer`) + ` rounded-full justify-center items-center mx-1`}
                         onClick={() => {if(props.maximaizedVideo != null && maximaizeVideo == true) {setMaximaizeVideo(false); props.setMaxVideo(null);}}} 
                     >
                         <FaWindowMinimize opacity="40%" alignmentBaseline="center"  size={12} color="black"/>
                     </button>
                     
                     <button 
-                        className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false && ` hover:bg-green-500 cursor-pointer`) +  `  rounded-full justify-center items-center mx-1`}
+                        className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false && props.notificationStatus == false && ` hover:bg-green-500 cursor-pointer`) +  `  rounded-full justify-center items-center mx-1`}
                         onClick={() => {
                             if(maximaizeVideo == true)
                             {
@@ -53,13 +53,12 @@ const Video = forwardRef((props, ref) => {
                         <FiMaximize2 opacity="40%" alignmentBaseline="center" size={14} color="black"/>
                     </button>
                     
-                    {/* <span></span> */}
                 </div>
                 <div className="group relative flex h-full w-full items-center justify-center">
                     {
                         !maximaizeVideo &&
                         <AdvancedImage
-                        className={`flex justify-center items-center z-10 ` +  (props.hamburgerStatus == false && `group-hover:opacity-0 group-hover:cursor-pointer`)}
+                        className={`flex justify-center items-center z-10 ` +  (props.hamburgerStatus == false && props.notificationStatus == false && `group-hover:opacity-0 group-hover:cursor-pointer`)}
                         width="110%"
                         height="100%"
                         cldImg={cld.image(`MyVideos/${props.url}`).setAssetType('video').format('auto:image')}

@@ -11,9 +11,6 @@ import { forwardRef, useState, useRef, useEffect } from "react";
 
 
 const Header = forwardRef((props,ref) => {
-
-  
-    const [notificationStatus, setNotificationStatus] = useState(false);
     const widgetRef = useRef();
     const cloudinaryRef = useRef();
     useEffect(() => {
@@ -62,11 +59,11 @@ const Header = forwardRef((props,ref) => {
             <SearchBar/>
             <div className="flex items-center justify-between w-80">
                 <Button onClick={() => {widgetRef.current.open()}} icon={<TfiUpload size={20}/>} rounded={true} inline={false}/>
-                <Button onClick={() => setNotificationStatus((status) => !status)} icon={<IoIosNotificationsOutline size={30}/>} rounded={true} inline={false}/>
+                <Button onClick={() => props.setNotificationStatus((status) => !status)} icon={<IoIosNotificationsOutline size={30}/>} rounded={true} inline={false}/>
                 <Button navLink="/profile" icon={<BsPersonCircle size={35}/>} rounded={true} inline={false}/>
             </div>
             {
-              notificationStatus &&
+              props.notificationStatus &&
               <Notifications/>
             }
         </header>

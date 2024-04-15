@@ -10,6 +10,7 @@ import Navbar from "../../components/navbar";
 export default function Home () {
   const [enableHamburger, setEnableHamburger] =  useState(false);
   const [maximaizedVideo, setMaximaizedVideo] = useState(null);
+  const [notificationStatus, setNotificationStatus] = useState(false);
 
   useEffect(() => {
     console.log(maximaizedVideo);
@@ -21,7 +22,7 @@ export default function Home () {
     <div className={enableHamburger == true ? ` h-screen overflow-hidden` : ` ` }>
       {
         (maximaizedVideo == null) &&
-        <Header ref={headerRef} hamburgerBehaviour={() => {if(enableHamburger == true) { setEnableHamburger(false) } else { setEnableHamburger(true) } } }/>
+        <Header notificationStatus={notificationStatus} setNotificationStatus={setNotificationStatus} ref={headerRef} hamburgerBehaviour={() => {if(enableHamburger == true) { setEnableHamburger(false) } else { setEnableHamburger(true) } } }/>
       }
       <div className='flex'>
         {
@@ -49,7 +50,7 @@ export default function Home () {
                 </div>
             }
               {
-                videos.map((video) => <Video hamburgerStatus={enableHamburger} url={`video`+video%4} key={video} ref={[headerRef, maximaizedVideo]} maximaizedVideo={maximaizedVideo} setMaxVideo={setMaximaizedVideo}/> )
+                videos.map((video) => <Video notificationStatus={notificationStatus}  hamburgerStatus={enableHamburger} url={`video`+video%4} key={video} ref={[headerRef, maximaizedVideo]} maximaizedVideo={maximaizedVideo} setMaxVideo={setMaximaizedVideo}/> )
               }
             </div>
           </div>
