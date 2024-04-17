@@ -8,6 +8,7 @@
   --color-white: #E4DFED;
 }
 
+
 body {
   @apply bg-blue text-slate-100;
 }

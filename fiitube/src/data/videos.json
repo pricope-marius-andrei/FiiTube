@@ -1,0 +1,177 @@
+[
+    {
+        "id": 2,
+        "title_video": "Bosquito - Intuneric in culori (Official Video)",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "channel_name": "Bosquito",
+        "channel_img": "https://yt3.googleusercontent.com/u0as4h7JI8Xe50zZcKkLbFPa3fP9ayiLNtap2cNd6cggnDp-FFN0m6ZUMeYrGSh3JfrD9ilautY=s176-c-k-c0x00ffffff-no-rj",
+        "likes": 300000,
+        "views": 1990000,
+        "comments" : [
+            {
+                "id": 1,
+                "channel_name" : "MrBean",
+                "channel_img" :"https://yt3.googleusercontent.com/u0as4h7JI8Xe50zZcKkLbFPa3fP9ayiLNtap2cNd6cggnDp-FFN0m6ZUMeYrGSh3JfrD9ilautY=s176-c-k-c0x00ffffff-no-rj",
+                "comment": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title_video": "REZUMAT | CFR - FCSB 1-1. Coman, pasă genială și golul anului",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "channel_name": "MrBeast",
+        "channel_img": "https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s176-c-k-c0x00ffffff-no-rj",
+        "likes": 300000,
+        "views": 250000,
+        "comments" : [
+            {
+                "id": 1,
+                "channel_name" : "MrBean",
+                "channel_img" : "https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s176-c-k-c0x00ffffff-no-rj",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                
+            }
+            ,
+            {
+                "id": 2,
+                "channel_name" : "Schwarzenegger",
+                "channel_img" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwrFoGDxV_jY39G_DmmLYDULeSv32tbKTWf4scKccVz0r0wZrS",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title_video": "De unde a pornit programarea?",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "channel_name": "MrBeast",
+        "channel_img": "https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s176-c-k-c0x00ffffff-no-rj",
+        "likes": 300000,
+        "views": 250000,
+        "comments" : [
+            {
+                "id": 1,
+                "channel_name" : "MrBean",
+                "channel_img" : "https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s176-c-k-c0x00ffffff-no-rj",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                
+            }
+            ,
+            {
+                "id": 2,
+                "channel_name" : "Schwarzenegger",
+                "channel_img" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwrFoGDxV_jY39G_DmmLYDULeSv32tbKTWf4scKccVz0r0wZrS",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                
+            }
+        ]
+    }
+    ,
+    {
+        "id": 1,
+        "title_video": "MrBeast a cumparat o ferma in Oituz",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "channel_name": "MrBeast",
+        "channel_img": "https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s176-c-k-c0x00ffffff-no-rj",
+        "likes": 300000,
+        "views": 250000,
+        "comments" : [
+            {
+                "id": 1,
+                "channel_name" : "MrBean",
+                "channel_img" : "https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s176-c-k-c0x00ffffff-no-rj",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                
+            }
+            ,
+            {
+                "id": 2,
+                "channel_name" : "Schwarzenegger",
+                "channel_img" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwrFoGDxV_jY39G_DmmLYDULeSv32tbKTWf4scKccVz0r0wZrS",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title_video": "How to stay calm when you know you'll be stressed | Daniel Levitin | TED",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "channel_name": "TED",
+        "channel_img": "https://yt3.googleusercontent.com/ytc/AIdro_l_fFETDQgTAl5rWb38pxJww-4kszJH_n0G4fKP1BdK-jc=s176-c-k-c0x00ffffff-no-rj",
+        "likes": 300000,
+        "views": 250000,
+        "comments" : [
+            {
+                "id": 1,
+                "channel_name" : "MrBean",
+                "channel_img" : "https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s176-c-k-c0x00ffffff-no-rj",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                
+            }
+            ,
+            {
+                "id": 2,
+                "channel_name" : "Schwarzenegger",
+                "channel_img" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwrFoGDxV_jY39G_DmmLYDULeSv32tbKTWf4scKccVz0r0wZrS",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                
+            }
+        ]
+    }
+    ,
+    {
+        "id": 6,
+        "title_video": "React for the Haters in 100 Seconds",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "channel_name": "Fireship",
+        "channel_img": "https://yt3.googleusercontent.com/ytc/AIdro_nbpmO4qfGbsMpTI1L80F4ObHRJxHP5qYz_PNHdaXUT3OY=s176-c-k-c0x00ffffff-no-rj",
+        "likes": 300000,
+        "views": 250000,
+        "comments" : [
+            {
+                "id": 1,
+                "channel_name" : "MrBean",
+                "channel_img" : "https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s176-c-k-c0x00ffffff-no-rj",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                
+            }
+            ,
+            {
+                "id": 2,
+                "channel_name" : "Schwarzenegger",
+                "channel_img" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwrFoGDxV_jY39G_DmmLYDULeSv32tbKTWf4scKccVz0r0wZrS",
+                "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+            }
+        ]
+    }
+    ,
+    {
+                "id": 7,
+                "title_video": "Educatia nu poate sa schimbe Romania ⁽ᵈᵉ ᵘⁿᵃ ˢᶦⁿᵍᵘʳᵃ⁾",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                "channel_name": "Kinezarie",
+                "channel_img": "https://yt3.googleusercontent.com/oC6cX_l0D8xBfVEyyiE7IX8IIsOlLbN-6YAjm_mWVZrlQaJJLg33tZB2YWEZBVcnBfKyfLpi92s=s176-c-k-c0x00ffffff-no-rj",
+                "likes": 300000,
+                "views": 250000,
+                "comments" : [
+                    {
+                        "id": 1,
+                        "channel_name" : "MrBean",
+                        "channel_img" : "https://yt3.googleusercontent.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s176-c-k-c0x00ffffff-no-rj",
+                        "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                        
+                    }
+                    ,
+                    {
+                        "id": 2,
+                        "channel_name" : "Schwarzenegger",
+                        "channel_img" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwrFoGDxV_jY39G_DmmLYDULeSv32tbKTWf4scKccVz0r0wZrS",
+                        "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum"
+                        
+                    }
+                ]
+            }
+]

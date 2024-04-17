@@ -7,6 +7,8 @@ import { BsPersonCircle } from "react-icons/bs";
 import Logo from "../common/logo";
 import Notifications from "../common/notifications"
 import { forwardRef, useState, useRef, useEffect } from "react";
+import videosData from "./../../data/videos.json"
+import { saveAs } from 'file-saver';
 
 
 
@@ -46,8 +48,14 @@ const Header = forwardRef((props,ref) => {
             },
         }
       }, function(error, result) {
-        console.log(error);
-      });
+        if(!error && result && result.event === "success")
+        {
+          console.log("Successfully upload!")
+          props.updateMaxIndex((state)=>state+1);
+        };
+          
+        }
+      );
     },[])
 
     return (
@@ -58,7 +66,7 @@ const Header = forwardRef((props,ref) => {
             </div>
             <SearchBar/>
             <div className="flex items-center justify-between w-80">
-                <Button onClick={() => {widgetRef.current.open()}} icon={<TfiUpload size={20}/>} rounded={true} inline={false}/>
+                <Button onClick={() => {widgetRef.current.open();}} icon={<TfiUpload size={20}/>} rounded={true} inline={false}/>
                 <Button onClick={() => props.setNotificationStatus((status) => !status)} icon={<IoIosNotificationsOutline size={30}/>} rounded={true} inline={false}/>
                 <Button navLink="/profile" icon={<BsPersonCircle size={35}/>} rounded={true} inline={false}/>
             </div>

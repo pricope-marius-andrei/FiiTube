@@ -1,10 +1,9 @@
 import { useState,useRef, useEffect } from "react";
 import Header from "../../components/header";
 import Video from "../../components/video";
-import VideoHeader from "../../components/video_header";
-import CommentsSection from "../../components/comments_section";
-import Description from "../../components/description";
 import Navbar from "../../components/navbar";
+import videosData from "../../data/videos.json"
+import { CookiesProvider, useCookies } from 'react-cookie'
 
 
 export default function Home () {
@@ -17,44 +16,42 @@ export default function Home () {
   },[maximaizedVideo])
   
   const headerRef = useRef(null);
-  const videos = [1,2,3,5,6,7,9,10];
+  const [cookies, setCookie] = useCookies(['maxIndex'])
+
+  useEffect(()=> {
+    setCookie('maxIndex', 6, { path: '/' })
+    setCookie('maxIndex', 6, {path : '/profile'})
+  },[])
+  
+  const [maxIndex, setMaxIndex] = useState(parseInt(cookies.maxIndex));
+
+
+  useEffect(()=> {
+    setCookie('maxIndex', maxIndex, { path: '/' })
+    setCookie('maxIndex', maxIndex, {path : '/profile'})
+    console.log(maxIndex);
+  },[maxIndex]);
+
   return (
     <div className={enableHamburger == true ? ` h-screen overflow-hidden` : ` ` }>
       {
         (maximaizedVideo == null) &&
-        <Header notificationStatus={notificationStatus} setNotificationStatus={setNotificationStatus} ref={headerRef} hamburgerBehaviour={() => {if(enableHamburger == true) { setEnableHamburger(false) } else { setEnableHamburger(true) } } }/>
+        <Header updateMaxIndex={setMaxIndex} notificationStatus={notificationStatus} setNotificationStatus={setNotificationStatus} ref={headerRef} hamburgerBehaviour={() => {if(enableHamburger == true) { setEnableHamburger(false) } else { setEnableHamburger(true) } } }/>
       }
       <div className='flex'>
         {
           enableHamburger &&
           <Navbar hamburgerBehaviour={() => {if(enableHamburger == true) { setEnableHamburger(false) } else { setEnableHamburger(true) } } }/>
         }
-        {
-
-          
+        { 
           <div className={`flex w-screen h-full justify-center items-center mx-10`}>
 
-            <div className={`w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-full gap-5 ` + (maximaizedVideo == null && ` mt-10` )} >
-            {
-              (maximaizedVideo != null) &&
-                <div className='col-span-2 row-span-12'>
-                  <div className='col-span-2 row-span-1'>
-                    <VideoHeader/>
-                  </div>
-                  <div className='col-span-2 row-span-1'>
-                    <Description views={120300} date={new Date()} description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
-                  </div>
-                  <div className='col-span-2 row-span-12'>
-                    <CommentsSection/>
-                  </div>
-                </div>
-            }
+            <div className={`w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-full gap-5 my-5`} >
               {
-                videos.map((video) => <Video notificationStatus={notificationStatus}  hamburgerStatus={enableHamburger} url={`video`+video%4} key={video} ref={[headerRef, maximaizedVideo]} maximaizedVideo={maximaizedVideo} setMaxVideo={setMaximaizedVideo}/> )
+                videosData.map((video) => {if(video.id != maxIndex + 1) { return <Video channel_img={video.channel_img} title={video.title_video} videoAdress={video.id} notificationStatus={notificationStatus}  hamburgerStatus={enableHamburger} url={`video`+ (video.id)} key={video.id} ref={[headerRef, maximaizedVideo]} maximaizedVideo={maximaizedVideo} setMaxVideo={setMaximaizedVideo}/>}} )
               }
             </div>
           </div>
-        
         }
       </div>
     </div>

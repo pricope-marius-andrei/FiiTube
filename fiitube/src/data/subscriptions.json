@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "channel_img": "https://yt3.googleusercontent.com/u0as4h7JI8Xe50zZcKkLbFPa3fP9ayiLNtap2cNd6cggnDp-FFN0m6ZUMeYrGSh3JfrD9ilautY=s176-c-k-c0x00ffffff-no-rj",
+        "channel_name": "Bosquito"
+    },
+    {
+        "id": 2,
+        "channel_img": "https://yt3.googleusercontent.com/615V3ooQrApySHmg9g_z3b2_Tb8ncQsYx_WZv-4S9T14cs23Mf1MrOYWmjbeSTEMdryIfN_Lp0A=s176-c-k-c0x00ffffff-no-rj",
+        "channel_name": "Enjoy Coding"
+    },
+    {
+        "id": 3,
+        "channel_img": "https://yt3.googleusercontent.com/zu1ewbXhNmR63ezQW69pFzab1j7Nzid8gYfw-ZxzG-MYpTNQc2YRsqeQj1-wPwKSKAKR0S7bmg=s176-c-k-c0x00ffffff-no-rj",
+        "channel_name": "Liga1"
+    },
+    {
+        "id": 4,
+        "channel_img": "https://yt3.googleusercontent.com/ytc/AIdro_l_fFETDQgTAl5rWb38pxJww-4kszJH_n0G4fKP1BdK-jc=s176-c-k-c0x00ffffff-no-rj",
+        "channel_name": "TED"
+    },
+    {
+        "id": 5,
+        "channel_img": "https://yt3.googleusercontent.com/ytc/AIdro_nbpmO4qfGbsMpTI1L80F4ObHRJxHP5qYz_PNHdaXUT3OY=s176-c-k-c0x00ffffff-no-rj",
+        "channel_name": "Fireship"
+    },
+    {
+        "id": 6,
+        "channel_img": "https://yt3.googleusercontent.com/oC6cX_l0D8xBfVEyyiE7IX8IIsOlLbN-6YAjm_mWVZrlQaJJLg33tZB2YWEZBVcnBfKyfLpi92s=s176-c-k-c0x00ffffff-no-rj",
+        "channel_name": "Kinezarie"
+    }
+]

@@ -33,7 +33,7 @@ export default function Button(props) {
             {
                 props.icon &&
                 <span className="flex justify-center p-3">
-                    {props.icon}
+                    {props.img == true ? <img className="rounded-full h-10" src={props.icon}></img> : props.icon}
                 </span>
             }
 

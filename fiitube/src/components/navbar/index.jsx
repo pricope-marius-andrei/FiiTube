@@ -6,6 +6,7 @@ import { FiAlignJustify } from "react-icons/fi";
 import { FaPersonSkating } from "react-icons/fa6";
 import { motion } from "framer-motion"
 import Logo from "../common/logo";
+import subsciptions from "./../../data/subscriptions.json"
 
 export default function Navbar(props) {
     return (
@@ -17,24 +18,29 @@ export default function Navbar(props) {
             <section className="flex flex-col w-full h-fit my-2 mx-2">
                 <div className="flex">
                     <div className={`py-2 ` + (props.block && `hidden`)}>
-                        <Button onClick={props.hamburgerBehaviour} icon={<FiAlignJustify size={30}/>} rounded={true} inline={false}/>
+                        <Button img={false} onClick={props.hamburgerBehaviour} icon={<FiAlignJustify size={30}/>} rounded={true} inline={false}/>
                     </div>
                     <Logo/>
                 </div>
                 <Button navLink={"/"} text="Acasa" rounded={false} inline={true} icon={<AiFillHome size={30}/>}/> 
-                <Button text="Trending" rounded={false} inline={true} icon={<FaFire size={30}/>}/> 
-                <Button text="You" rounded={false}  inline={true} icon={<FaFolderOpen size={30}/>}/> 
+                <Button navLink={"/"} text="Trending" rounded={false} inline={true} icon={<FaFire size={30}/>}/> 
+                <Button navLink={"/profile"} text="You" rounded={false}  inline={true} icon={<FaFolderOpen size={30}/>}/> 
             </section>
             <section className="flex flex-col w-full h-fit justify-center">
                 <h1 className="text-center font-semibold text-2xl">Substriptions</h1>
                 <section className="flex flex-col w-full my-5">
+                    {
+                        subsciptions.map((subsciption) =>
+                            <Button img={true} text={subsciption.channel_name} inline={true} rounded={false} icon={subsciption.channel_img} /> 
+                        )
+                    }
+                    
+                    {/* <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
                     <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
                     <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
                     <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
                     <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
+                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} />  */}
 
                 </section>
             </section>
