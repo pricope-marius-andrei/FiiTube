@@ -48,7 +48,7 @@ export default function Home () {
 
             <div className={`w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-full gap-5 my-5`} >
               {
-                videosData.map((video) => {if(video.id != maxIndex + 1) { return <Video channel_img={video.channel_img} title={video.title_video} videoAdress={video.id} notificationStatus={notificationStatus}  hamburgerStatus={enableHamburger} url={`video`+ (video.id)} key={video.id} ref={[headerRef, maximaizedVideo]} maximaizedVideo={maximaizedVideo} setMaxVideo={setMaximaizedVideo}/>}} )
+                videosData.map((video) => {if(video.id < maxIndex + 1) { return <Video channel_img={video.channel_img} title={video.title_video} videoAdress={video.id} notificationStatus={notificationStatus}  hamburgerStatus={enableHamburger} url={`video`+ (video.id)} key={video.id} ref={[headerRef, maximaizedVideo]} maximaizedVideo={maximaizedVideo} setMaxVideo={setMaximaizedVideo}/>}} )
               }
             </div>
           </div>

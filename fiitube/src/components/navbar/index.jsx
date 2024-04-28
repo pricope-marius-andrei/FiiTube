@@ -22,26 +22,18 @@ export default function Navbar(props) {
                     </div>
                     <Logo/>
                 </div>
-                <Button navLink={"/"} text="Acasa" rounded={false} inline={true} icon={<AiFillHome size={30}/>}/> 
+                <Button navLink={"/"} text="Home" rounded={false} inline={true} icon={<AiFillHome size={30}/>}/> 
                 <Button navLink={"/"} text="Trending" rounded={false} inline={true} icon={<FaFire size={30}/>}/> 
                 <Button navLink={"/profile"} text="You" rounded={false}  inline={true} icon={<FaFolderOpen size={30}/>}/> 
             </section>
             <section className="flex flex-col w-full h-fit justify-center">
-                <h1 className="text-center font-semibold text-2xl">Substriptions</h1>
+                <h1 className="text-center font-semibold text-2xl">Subscriptions</h1>
                 <section className="flex flex-col w-full my-5">
                     {
                         subsciptions.map((subsciption) =>
                             <Button img={true} text={subsciption.channel_name} inline={true} rounded={false} icon={subsciption.channel_img} /> 
                         )
                     }
-                    
-                    {/* <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
-                    <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} />  */}
-
                 </section>
             </section>
         </motion.nav>
