@@ -1,10 +1,11 @@
-import Button from "../common/button";
 import { AiFillHome } from "react-icons/ai";
 import { FaFire } from "react-icons/fa";
 import { FaFolderOpen } from "react-icons/fa6";
 import { FiAlignJustify } from "react-icons/fi";
 import { FaPersonSkating } from "react-icons/fa6";
 import { motion } from "framer-motion"
+
+import Button from "../common/button";
 import Logo from "../common/logo";
 
 export default function Navbar(props) {
@@ -35,7 +36,6 @@ export default function Navbar(props) {
                     <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
                     <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
                     <Button text="Enjoy Coding" inline={true} rounded={false} icon={<FaPersonSkating size={30}/>} /> 
-
                 </section>
             </section>
         </motion.nav>

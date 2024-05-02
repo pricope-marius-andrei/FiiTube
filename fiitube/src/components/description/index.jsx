@@ -1,8 +1,8 @@
 import { useState } from "react"
 
 export default function Description(props) {
-
     const [showLessStatus, setShowLessStatus] = useState(true);
+
     return (
         <div className={`flex w-full p-5 shadow-xl flex-col items-start ` + (showLessStatus == false ? ` h-full` : ` h-36 overflow-hidden`)}>
             <div className="flex w-48 justify-between">

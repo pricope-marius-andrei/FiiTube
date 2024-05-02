@@ -1,4 +1,3 @@
-import { FaSearch } from "react-icons/fa";
 import { useRef, useEffect } from "react";
 
 export default function SearchBar(props) {
