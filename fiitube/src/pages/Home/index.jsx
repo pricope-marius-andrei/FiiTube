@@ -9,11 +9,11 @@ import { useHome } from './hooks';
 export default function Home() {
 	const {
 		enableHamburger,
-		setEnableHamburger,
 		maximaizedVideo,
 		setMaximaizedVideo,
 		notificationStatus,
 		setNotificationStatus,
+		hamburgerBehaviour,
 		headerRef,
 		videos,
 	} = useHome();
@@ -28,26 +28,12 @@ export default function Home() {
 					notificationStatus={notificationStatus}
 					setNotificationStatus={setNotificationStatus}
 					ref={headerRef}
-					hamburgerBehaviour={() => {
-						if (enableHamburger == true) {
-							setEnableHamburger(false);
-						} else {
-							setEnableHamburger(true);
-						}
-					}}
+					hamburgerBehaviour={hamburgerBehaviour}
 				/>
 			)}
 			<div className='flex'>
 				{enableHamburger && (
-					<Navbar
-						hamburgerBehaviour={() => {
-							if (enableHamburger == true) {
-								setEnableHamburger(false);
-							} else {
-								setEnableHamburger(true);
-							}
-						}}
-					/>
+					<Navbar hamburgerBehaviour={hamburgerBehaviour} />
 				)}
 				{
 					<div

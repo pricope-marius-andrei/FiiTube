@@ -6,6 +6,7 @@ import { FaShareAlt } from "react-icons/fa";
 export default function VideoHeader(props) {
     const [statusLike, setStatusLike] = useState(false);
     const [statusDislike, setStatusDislike] = useState(false); 
+    
     return (
         <>
             <div className="flex flex-col shadow-xl px-10">

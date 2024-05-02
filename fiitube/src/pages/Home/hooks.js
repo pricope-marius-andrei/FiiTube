@@ -12,13 +12,21 @@ export const useHome = () => {
 	const headerRef = useRef(null);
 	const videos = [1, 2, 3, 5, 6, 7, 9, 10];
 
+const hamburgerBehaviour = () => {
+  if (enableHamburger == true) {
+    setEnableHamburger(false);
+  } else {
+    setEnableHamburger(true);
+  }
+}
+
   return{
     enableHamburger,
-    setEnableHamburger,
     maximaizedVideo,
     setMaximaizedVideo,
     notificationStatus,
     setNotificationStatus,
+    hamburgerBehaviour,
     headerRef,
     videos
   }
