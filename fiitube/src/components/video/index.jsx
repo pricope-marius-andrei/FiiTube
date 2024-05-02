@@ -18,7 +18,6 @@ const Video = forwardRef((props, ref) => {
     }));
     
     return (
-        <>
             <div ref={videoRef} className={`flex flex-col h-fit bg-blue ` + (props.hamburgerStatus == false && props.notificationStatus == false && `hover:bg-gray `) + `rounded-2xl shadow-lg ` + (maximaizeVideo ? ` col-span-3 row-span-2 h-screen order-first transition-all` : ` h-96 transition-all`)}>
                 <div className="flex flex-row-reverse z-0 w-full justify-start p-2">
                     <button className={`flex w-5 h-5 bg-light-gray ` + (props.hamburgerStatus == false && props.notificationStatus == false &&  ` hover:bg-red-600 cursor-pointer`) + ` rounded-full justify-center items-center mx-1`}><MdReport opacity="40%" alignmentBaseline="center"  size={20} color="white"/></button>
@@ -95,7 +94,6 @@ const Video = forwardRef((props, ref) => {
                     </div>
                 }
             </div>
-        </>
     )
 }) 
 
